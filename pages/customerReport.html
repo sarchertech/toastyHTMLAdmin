@@ -1,0 +1,32 @@
+﻿<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone #</th>
+                <th>Level</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="vert-align-tb" >
+            <tr ng-repeat="tanner in tanners">
+                <td>{{ tanner.name }}</td>
+                <td>555-555-5555</td>
+                <td>3</td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm btn-primary">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                        Edit
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm btn-danger">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
